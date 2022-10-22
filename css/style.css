@@ -1,0 +1,311 @@
+:root {
+    --primary-color: #3d91b7;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #444444;
+    font-family: sans-serif;
+  }
+
+  /* Whole homepage */
+  #homepage {
+    background: linear-gradient(rgba(61, 142, 180, 0.404), rgba(52, 141, 182, 0.281)), url(../img/bg.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    height: 95vh;
+  }
+  
+  /* header */
+  header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    z-index: 1500;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  
+  header::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header h1,
+  nav ul > li {
+    display: inline-block;
+  }
+  
+  header h1 a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  
+  header nav a {
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  header nav a:hover,
+  .dropdown:hover > a {
+    background-color: rgba(255, 255, 255, 0.203);
+    color: rgb(19, 19, 31);
+  }
+  
+  nav {
+    float: right;
+    margin-top: 4px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* dropdowns (in header) */
+  .dropdown > a {
+    color: white !important;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-1 {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 2px gray;
+    top: 100px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    z-index: 1100;
+  }
+  
+  .dropdown:hover .dropdown-1 {
+    top: 32px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .dropdown-1 li {
+    display: block;
+    min-width: 200px;
+    margin: 15px;
+  }
+  
+  .dropdown-1 a {
+    color: black;
+  }
+  
+  .dropdown-1 a:hover {
+    color: var(--primary-color);
+  }
+
+  .fa-chevron-right {
+    padding-left: 23px;
+  }
+  
+  .deepdrop {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 2px gray;
+    top: 100px;
+    right: 226px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  
+  .dropdown-1:hover .deepdrop {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+/* Welcome section (in homepage) */   
+#container2 {
+    text-align: center;
+    margin: 35vh 40vh 40vh; 
+    text-shadow: 500px;
+    width: 60%;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    opacity: 1;
+    animation-name: welcome;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes welcome {
+  from {
+      margin-top: 80vh;
+  }
+  to { 
+      margin-top: 35vh;
+  }
+
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#container2 h1 {
+    font-size: 64px;
+    line-height: 56px;
+    
+}
+
+#container2 h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+
+#scrolldown i {
+    position: relative;
+    top: 40px;
+    font-size: 50px;
+    transition: top 0.7s;
+    transition-timing-function: linear;
+}
+
+
+#scrolldown i:hover {
+    top: 70px;   
+}
+
+
+/* main */
+
+main {
+  background-color: whitesmoke;
+}
+
+
+/* about us */
+#aboutus {
+    text-align: center;
+    margin: 0 auto;
+    background: url(../img/about-bg.jpg);
+    background-size: cover; 
+    height: 95vh;
+    padding: 40px 0;
+}
+
+.article1 {
+  padding: 70px 25px 25px 0;
+  margin-top: 15px;
+  margin-left: 40px;
+  width: 30%;
+}
+
+#aboutus h1,
+#aboutus p {
+  margin: 15px 0;
+}
+
+#aboutus button {
+  margin-top: 2px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+  opacity: 1;
+  font-size: 17px;
+}
+
+#aboutus button:hover {
+    opacity: 0.6;
+}
+
+.article2,
+.article3,
+.article4,
+.article5 {
+  padding-top: 60px;
+  width: 70%;
+  margin-left: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+main i {
+  color: var(--primary-color);
+  font-size: xx-large;
+}
+
+
+/* services */
+
+.services {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 45px;
+    width: 90%;  
+}
+
+.services h1,
+.services p,
+.services i {
+  padding: 5px 0;
+}
+
+.service1 {
+    /* box-sizing: border-box; */
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    box-shadow: 100px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 15px;
+    transition-property: background-color;
+    transition-delay: 0.3s;
+}
+
+.service1:hover {
+    background-color: var(--primary-color);
+  }
+
+.counts {
+  /* display: flex;
+  flex-direction: row; */
+  margin: 40px 60px;
+}
+
+#count1,
+#count2,
+#count3,
+#count4, {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 70%;
+  height: 40%;
+  margin-left: 30px;
+}
