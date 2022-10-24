@@ -203,6 +203,10 @@ main {
   background-color: white;
 }
 
+main a {
+  text-decoration: none;
+}
+
 main i {
   color: var(--primary-color);
   font-size: 35px;
@@ -513,10 +517,11 @@ s-container2 p {
   line-height: 25px;
 }
 
-.portflio button {
-  color: white;
-  background-color: transparent;
-  border-radius: 30px;
+.portfolio button {
+  color: rgb(21, 40, 49);
+  background-color:  rgba(193, 218, 226, 0.849);
+  border-radius: 70px;
+  padding: 20px;
   border: white;
   border-style: solid;
   font-size: 1rem;
@@ -524,6 +529,29 @@ s-container2 p {
   font-weight:lighter;
   transition: all 0.3s ease-in-out;
 }
+
+.portfolio button a:hover {
+  color: white;
+}
+
+.portfolio a {
+  color:rgb(21, 40, 49);
+  padding: 10px;
+}
+
+.p-title {
+  background-image: url(../img/section-title-bg.png);
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 20vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-title h1 {
+  color:rgb(21, 40, 49);
+}
+
 
 
 /* Portfolio gallery  */
