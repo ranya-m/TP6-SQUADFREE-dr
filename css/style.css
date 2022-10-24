@@ -274,7 +274,7 @@ section {
   width: 35%;
   padding: 25 25 25 0;
   margin-right: 45px;
-  margin-top: 70px;   
+  margin-top: 20px;   
 }
 
 .item1 p {
@@ -296,7 +296,7 @@ section {
 .item3,
 .item4,
 .item5 {
-  width: 40%;
+  /* width: 40%; */
   padding-bottom: 20px;
   box-sizing:border-box;
 }
@@ -306,6 +306,7 @@ section {
   flex: wrap;
   gap: 10px;
   box-sizing:border-box;
+  margin-left: 20px;
 }
 
 /* services */
