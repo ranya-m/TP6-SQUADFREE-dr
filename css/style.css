@@ -738,14 +738,14 @@ tm-presentation p {
 
 
 .tm-containers {
-  position: relative;
+  /* position: relative; */
   width: 1200px; 
   margin: 0 auto;
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
   line-height: 25px;
   background-color: purple;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
