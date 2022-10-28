@@ -739,24 +739,35 @@ tm-presentation p {
 
 .tm-containers {
   /* position: relative; */
-  width: 1200px; 
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 20px;
   line-height: 25px;
-  background-color: purple;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .amember {
-  width: 200px;
+  width: 25%;
 
 }
 
-.tm-containers img {
-  width: 200px;
-  height: 200px;
+.tm-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.tm-photos img {
+  width: 30%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  z-index: 0;
 }
 
 hr {
@@ -771,16 +782,25 @@ hr {
   box-shadow: 0 0 50px 0 rgba(53, 69, 113, 0.12);
   background-color: white;
   color: rgb(27, 74, 95);
-  padding-bottom: 15px;
-  padding-top: 15px;
-  width: 150px;
+  padding: 10px 30px;
+  width: 23%;
   margin: 0 auto;
-  text-align: center;
-  position: relative;
-  bottom: 5%;
-  height: 70px;
+  text-align: center; 
+  height: 65px;
   transition: height 0.5s ease-in-out;
   overflow: hidden;
+  z-index: 1;
+  position: relative;
+  bottom: 40%;
+
+}
+
+.tm-big-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 100px;
 
 }
 
@@ -792,6 +812,7 @@ hr {
 
 .tm-details:hover {
   height: 100px;
+  
 }
 
 
