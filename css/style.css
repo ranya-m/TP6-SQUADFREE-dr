@@ -815,6 +815,130 @@ hr {
   
 }
 
+/* contact */
+.contact {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px; 
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  line-height: 25px;
+  background-color:rgba(224, 234, 239, 0.281);
+}
+
+.ct-title {
+  background-image: url(../img/section-title-bg.png);
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 22vh;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.ct-title h1 {
+  color:rgb(36, 66, 80);
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+ct-presentation p {
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.ct-presentation {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ct-containers {
+  /* position: relative; */
+  width: 100%;
+  margin: 5% 5%;
+  line-height: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.ct-details {
+  background-color: white;
+  box-sizing:border-box;
+  box-shadow: 0 0 50px 0 rgba(53, 69, 113, 0.12);
+  background-color: white;
+  color: rgb(27, 74, 95);
+  padding: 30px 30px;
+  width: 23%;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  bottom: 40%;
+}
+
+.ct-details:first-child {
+  width: 35% !important;
+}
+
+.contact i {
+  font-size: 2em;
+  padding: 0;
+  margin: 0 auto;
+  color: rgb(101, 216, 216);
+}
+
+/* map and form */
+.mf-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 80vh;
+}
+
+.map {
+  width: 10%;
+  margin-left: 10vh;
+  padding: 0;
+}
+
+
+
+.form {
+  width: 40%;
+  box-shadow: 0 0 50px 0 rgba(53, 69, 113, 0.12);
+  background-color: white;
+  padding-top: 10vh;
+}
+
+.send-button {
+  background-color: rgb(101, 216, 216);
+  color: white;
+  font-size: 1em;
+  padding: 10px 40px;
+  margin-top: 20px;
+  border: none;
+}
+
+input[type=text] {
+  border: 2px solid rgb(210, 208, 211);
+  padding-bottom: 2vh;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding-right: 10vh;
+}
+
+#message {
+  padding-bottom: 10vh;
+}
+
+
+
 
 
 
