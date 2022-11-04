@@ -109,11 +109,11 @@
   }
   
   .dropdown-1 a {
-    color: black;
+    color: rgb(42, 79, 97) !important;
   }
   
   .dropdown-1 a:hover {
-    color: var(--primary-color);
+    color: rgb(74, 143, 175) !important;
   }
 
   .fa-chevron-right {
@@ -184,11 +184,19 @@
 
 
 #scrolldown {
+  margin: 0 auto;
+  text-align: center;
     position: relative;
     top: 40px;
     font-size: 50px;
     transition: top 0.7s;
     transition-timing-function: linear;
+    height: 20vh;
+    width: 8vh;
+}
+
+#scrolldown i {
+  margin-top: 5vh;
 }
 
 
@@ -370,7 +378,7 @@ section {
   z-index: 10;
   background-color: white;
   border-radius: 10px;
-
+ 
 }
 
 .s-item1::after,
@@ -397,12 +405,11 @@ section {
 }
 
 
-s-container2:hover i {
+.s-item1:hover::after i {
   color: white !important;
 }
 
-s-container2 h3,
-s-container2 p {
+.s-item1:hover {
   color:white !important;
 }
 
@@ -737,17 +744,6 @@ tm-presentation p {
 }
 
 
-.tm-containers {
-  /* position: relative; */
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  line-height: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .amember {
   width: 25%;
 
@@ -776,32 +772,43 @@ hr {
   text-align: center;
 }
 
-.tm-details {
-  background-color: white;
+.tm-details1,
+.tm-details2,
+.tm-details3 {
   box-sizing:border-box;
   box-shadow: 0 0 50px 0 rgba(53, 69, 113, 0.12);
   background-color: white;
   color: rgb(27, 74, 95);
   padding: 10px 30px;
-  width: 23%;
-  margin: 0 auto;
-  text-align: center; 
+  width: 23%; 
   height: 65px;
   transition: height 0.5s ease-in-out;
   overflow: hidden;
   z-index: 1;
-  position: relative;
-  bottom: 40%;
+  position: absolute;
+  top: 90%;
+  left: 8.5%;
+}
+
+.tm-details2 {
+  left: 39%;
 
 }
+
+.tm-details3 {
+  left: 69%;
+}
+
 
 .tm-big-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  padding-bottom: 100px;
-
+  position: relative;
+  /* margin: 0 auto; */
+  margin-bottom: 20px;
+  line-height: 25px;
 }
 
 .socials i {
@@ -810,9 +817,10 @@ hr {
   margin: 0 auto;
 }
 
-.tm-details:hover {
-  height: 100px;
-  
+.tm-details1:hover,
+.tm-details2:hover, 
+.tm-details3:hover {
+  height: 150px; 
 }
 
 /* contact */
@@ -907,38 +915,171 @@ ct-presentation p {
   padding: 0;
 }
 
+/* FORM */
 
-
-.form {
-  width: 40%;
-  box-shadow: 0 0 50px 0 rgba(53, 69, 113, 0.12);
-  background-color: white;
-  padding-top: 10vh;
+/* Style inputs and textareas */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-.send-button {
+
+/* Style the submit button */
+input[type=submit] {
+  cursor: pointer;
+  float: center;
   background-color: rgb(101, 216, 216);
   color: white;
   font-size: 1em;
   padding: 10px 40px;
-  margin-top: 20px;
+  margin-top: 10px;
+  border: none;
+
+}
+
+/* Style the container */
+.fcontainer {
+  border-radius: 5px;
+  background-color: white;
+  /* padding: 20px; */
+  width: 40%;
+}
+
+form {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* button in form */
+
+.send-button {
+  
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color:rgb(27, 74, 95);
+  color: white;
+  justify-content: space-around;
+}
+footer ul{
+  position:relative;
+}
+footer ul li {
+  list-style-image: url(../img/icons8-chevron-24.png);
+  
+}
+
+footer ul li::before {
+  position: absolute;
+  content: "";
+  color: white;
+
+}
+
+.carte-visite {
+  width: 25%;
+  text-align: center;
+  line-height: 2em;
+  background-color: white;
+  color: rgb(36, 66, 80);
+  border-top:rgb(101, 216, 216) solid 0.3em;
+  position: relative;
+  top: -5vh;
+  padding: 7vh 0;
+  font-size: 0.8em;
+}
+
+.carte-visite>h1 {
+  padding-bottom: 2vh;
+}
+
+.socials>i {
+  color: rgb(36, 66, 80);
+  padding-top: 2vh;
+  font-size: 2em;
+  padding-left: 2vh;
+}
+
+
+.links,
+.ourservices {
+  width: 10%;
+  padding-top: 5%;
+}
+
+
+.ournewsletter {
+  width: 25%;
+  padding-top: 5%;
+}
+
+#subbar { 
+  padding-right: 1em;
+  margin-top: 1em;
+}
+
+
+.sub-button {
+  background-color: rgb(101, 216, 216);
+  color: white;
+  font-size: 1em;
+  padding: 7px 40px;
+  margin-top: 5px;
   border: none;
 }
 
-input[type=text] {
-  border: 2px solid rgb(210, 208, 211);
-  padding-bottom: 2vh;
-  font-size: 1em;
-  margin-bottom: 10px;
-  padding-right: 10vh;
+.copyright {
+  width: 85%;
+  padding: 5% 0;
 }
 
-#message {
-  padding-bottom: 10vh;
+.copyright>hr {
+  width: 100%;
+  color:rgb(68, 133, 163);
 }
 
-
-
+.copyright>p {
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 
